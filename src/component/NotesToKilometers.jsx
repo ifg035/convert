@@ -21,14 +21,14 @@ function MeterToCentimeters() {
         <div className={styles.container }>
             <div className="column-a">
                 <input type="text" value={disabled ? amount / unit :amount}  disabled={disabled} onChange={handleChange}  />
-                <label htmlFor="meter" >미터(m)</label>
+                <label htmlFor="meter" >노트(n)</label>
             </div>
             <div className="coulmn-b">
                 <p>=</p>
             </div>
             <div className='column-c'>
                 <input type="text" id="centimeter" value={ !disabled ? amount * unit : amount} disabled={!disabled} onChange={handleChange} />
-                <label htmlFor="centimeter">센티미터(cm)</label>
+                <label htmlFor="centimeter">킬로미터(km)</label>
             </div>
         </div>
         <div className={styles.btns}>

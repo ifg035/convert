@@ -1,3 +1,61 @@
+header{
+    background-color: thistle;
+    color:white;
+    padding:1.5rem 0;
+    text-align:center;
+}
+main{
+    padding: 1rem 0;
+}
+
+footer{
+    border-top: 1px solid thistle;
+    padding-top:1rem;
+}
 .container{
     display: flex;
+    gap: 1rem;
+    margin: 1rem;
+    justify-content: center;
+}
+.text-center{
+    text-align: center;
+}
+.wrapper{
+    max-width: 60%;
+    margin: 0 auto;
+}
+label{
+    display: block;
+}
+
+
+input[type="text"]{
+    width:200px;
+    height:60px;
+    outline:none;
+}
+
+.btns{
+    margin-top: 1rem;
+    text-align: center;
+}
+button{
+    border: 0; 
+    padding: 1rem;
+  margin:.5rem ;
+  height:40px;
+}
+
+.inverse{
+ background-color: transparent;
+ border: 1px solid pink;
+ color:black;
+ text-shadow: .5rem ; 
+}
+
+.reset{
+  background-color: darksalmon;
+  border: 1px solid transparent;
+  color:white;
 }

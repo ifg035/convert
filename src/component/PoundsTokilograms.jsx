@@ -1,7 +1,7 @@
 import React ,{useState}from 'react';
 import styles from './MetersToCentimeters.module.css'
 
-function MeterToCentimeters() {
+function PoundsTokilograms() {
   const [amount,setAmount] =useState("1");
   const [disabled, setDisabled] = useState(false);
   const unit = 100
@@ -21,14 +21,14 @@ function MeterToCentimeters() {
         <div className={styles.container }>
             <div className="column-a">
                 <input type="text" value={disabled ? amount / unit :amount}  disabled={disabled} onChange={handleChange}  />
-                <label htmlFor="meter" >미터(m)</label>
+                <label htmlFor="meter" >파운드(p)</label>
             </div>
             <div className="coulmn-b">
                 <p>=</p>
             </div>
             <div className='column-c'>
                 <input type="text" id="centimeter" value={ !disabled ? amount * unit : amount} disabled={!disabled} onChange={handleChange} />
-                <label htmlFor="centimeter">센티미터(cm)</label>
+                <label htmlFor="centimeter">킬로그램(kg)</label>
             </div>
         </div>
         <div className={styles.btns}>
@@ -39,4 +39,4 @@ function MeterToCentimeters() {
     )
 }
 
-export default MeterToCentimeters
+export default PoundsTokilograms
